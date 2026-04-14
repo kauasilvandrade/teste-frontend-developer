@@ -47,13 +47,15 @@ git clone https://github.com/kauasilvandrade/teste-frontend-developer.git
 
 ### 2. Configurar servidor local
 - Instale o **XAMPP**
+- Start Apache e MySQL
 - Coloque a pasta do projeto dentro da pasta:
   ```bash
   htdocs/
   ```
 
 ### 3. Criar o banco de dados
-- Acesse o **phpMyAdmin**
+- Acesse o **phpMyAdmin** 
+- http://localhost/phpmyadmin
 - Crie um banco de dados chamado:
   
   ``` bash
@@ -63,14 +65,13 @@ git clone https://github.com/kauasilvandrade/teste-frontend-developer.git
 - Crie a tabela contatos:
   
   ```bash
-  CREATE DATABASE contatoviagens;
   CREATE TABLE contatos (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(100),
-  email VARCHAR(100),
-  telefone VARCHAR(20),
-  destino VARCHAR(100),
-  mensagem TEXT
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    telefone VARCHAR(20),
+    destino VARCHAR(100),
+    mensagem TEXT
   );
   ```
 
@@ -83,7 +84,7 @@ git clone https://github.com/kauasilvandrade/teste-frontend-developer.git
 
 ## 👩‍💻 AUTOR
   **Kauã da Silva Andrade**  
-  [Linkedin](https://www.linkedin.com/in/kau%C3%A3-andrade/)
+  [Linkedin](https://www.linkedin.com/in/kauã-andrade/)
   [GitHub](https://github.com/kauasilvandrade)
 
 Muito obrigado pela oportunidade Ellos Desgin ❤️
