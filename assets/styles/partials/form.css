@@ -1,0 +1,70 @@
+form {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    flex-basis: 50%;
+    opacity: 0.8;
+    padding: 2.5rem;
+    width: 100%;
+}
+
+.heroSection__inputGroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.heroSection__inputBox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.heroSection__inputBox label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: var(--text-color-tertiary)
+}
+
+.heroSection__inputBox input, .heroSection__inputBox select, .heroSection__inputBox textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    padding: 0.85rem 1rem;
+    outline: none;
+    transition: border-color 0.3s, background 0.3s;
+    appearance: none;
+    resize: none;
+
+    &:focus, &:hover {
+        border-color: var(--bg-color-highlight);
+        background: rgba(201, 168, 76, 0.05);
+    }
+}
+
+.heroSection__inputBox select option {
+    background-color: #282828;
+}
+
+.heroSection__inputBox textarea {
+    margin-bottom: 2rem;
+}
+
+form button {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding-block: 1.2rem !important;
+}
+
+@media (max-width: 850px) {
+    .heroSection__inputGroup {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,14 @@
+@import url(elements.css);
+@import url(global.css);
+@import url(variable.css);
+
+/* PARTES */
+@import url(partials/header.css);
+@import url(partials/heroSection.css);
+@import url(partials/form.css);
+@import url(partials/aboutUsSection.css);
+@import url(partials/servicesSection.css);
+@import url(partials/sectionTestimonials.css);
+@import url(partials/sectionFaq.css);
+@import url(partials/contactSection.css);
+@import url(partials/footer.css);

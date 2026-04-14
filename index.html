@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Aura Voyages</title>
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/ca4876cb59.js" crossorigin="anonymous"></script>
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/index.css" />
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="header__logo">Aura.Voyages</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="#about">Sobre</a></li>
+            <li class="header__item"><a href="#services">Serviços</a></li>
+            <li class="header__item"><a href="#testimonials">Depoimentos</a></li>
+            <li class="header__item"><a href="#faq">FAQ</a></li>
+            <li class="header__item"><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="header__btnMenu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Abrir menu"
+        >
+                <span class="hamburguer"></span>
+        </button>
+
+        <a href="#hero" class="link__contact">Fale Conosco</a>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main>
+        
+        <!-- SEÇÃO HERO -->
+        <section class="heroSection" id="hero">
+            <div class="container">
+                <div class="heroSection__introduction" data-anime="left">
+                    <span class="hightlight">Experiências Exclusivas</span>
+                    <h1>Viaje para <strong>além</strong> do ordinário</h1>
+                    <p>Curadoria personalizada de roteiros para os viajantes mais exigentes. Cada detalhe, cada momento — projetado para a perfeição.</p>
+                    <a href="#about" class="link__contact">Nossa História</a>
+                    <a href="#testimonials">Ver Depoimentos</a>
+                </div>
+                
+                <form action="api/processa-form.php" method="POST" data-anime="right" > 
+                    <div class="heroSection__inputGroup">
+                        <div class="heroSection__inputBox">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="heroSection__inputBox">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" placeholder="seu@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="heroSection__inputGroup">
+                        <div class="heroSection__inputBox">
+                            <label for="text">Telefone</label>
+                            <input type="text" id="text" name="telefone" placeholder="(11) 99999-9999" required>
+                        </div>
+                        <div class="heroSection__inputBox">
+                            <label for="email">Destione de Interesse</label>
+                            <select name="destino" id="destino" required>
+                                <option selected disabled value="">Selecione...</option>
+                                <option value="europa">Europa</option>
+                                <option value="asia">Ásia</option>
+                                <option value="americaNorte">America do Norte</option>
+                                <option value="americaSul">America do Sul</option>
+                                <option value="africa">África</option>
+                                <option value="oceania">Oceania</option>
+                                <option value="orienteMedio">Oriente Médio</option>
+                                <option value="iDontKnow">Ainda não sei</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="heroSection__inputBox">
+                        <label for="menssage">Conte-nos sobre o seu sonho</label>
+                        <textarea name="mensagem" id="menssage" rows="5" placeholder="Descreva o tipo de viagem que você imagina..."></textarea>
+                    </div>
+                    <button type="submit" class="link__contact">Enviar Mensagem →</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE NÓS -->
+        <section class="aboutUsSection container" id="about">
+            <figure class="aboutUsSection__imgBox" data-anime="left">
+                <img src="assets/images/global/morning.png" alt="imagem de uma manhã cheia de balões">
+                <figcaption>Descubra a perspectiva do mundo</figcaption>
+            </figure>
+
+            <div class="aboutUsSection__introduction" data-anime="right">
+                <span class="hightlight">Nossa História</span>
+                <h2>Criamos viagens que <strong>transformam</strong> perspectivas</h2>
+                <p>Fundada em 2011, a Aura Voyages nasceu da crença de que viajar é muito mais do que ir de um lugar a outro. É sobre se perder em culturas, provar memórias, e voltar diferente.</p>
+                <p>Nossa equipe de consultores especializados mapeia cada destino a fundo — dos melhores hotéis boutique aos restaurantes que só os locais conhecem.</p>
+                <ul class="aboutUsSection__characteristicsList">
+                    <li class="aboutSection__characteristicsItem">Viagens Privadas</li>
+                    <li class="aboutSection__characteristicsItem">Lua de Mel</li>
+                    <li class="aboutSection__characteristicsItem">Aventura</li>
+                    <li class="aboutSection__characteristicsItem">Cultura</li>
+                    <li class="aboutSection__characteristicsItem">Gastronomia</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SERVIÇOS -->
+        <section class="servicesSection" id="services">
+            <div class="container">
+                <span class="hightlight" data-anime="top">O que fazemos</span>
+                <h2 data-anime="top">Serviços sob medida para cada viajante</h2>
+                <p data-anime="top">Do planejamento inicial ao retorno para casa, acompanhamos cada passo com atenção obsessiva aos detalhes.</p>
+                <ul class="servicesSection__listServices">
+                    <li class="servicesSection__item" data-anime="left">
+                        <img src="assets/images/icon/mapIcon.svg" alt="Map Icon" />
+                        <h3>Roteiros personalizados</h3>
+                        <p>Cada itinerário é construído do zero para o seu perfil — ritmo, estilo e interesses únicos.</p>
+                    </li>
+                    <li class="servicesSection__item" data-anime="top">
+                        <img src="assets/images/icon/hotelIcon.svg" alt="Hotel Icon" />
+                        <h3>Hospedagem exclusiva</h3>
+                        <p>Curadoria de hotéis boutique, lodges históricos e propriedades que nenhum guia convencional lista.</p>
+                    </li>
+                    <li class="servicesSection__item" data-anime="right">
+                        <img src="assets/images/icon/planIcon.svg" alt="Plan Icon" />
+                        <h3>Transfers & voos</h3>
+                        <p>Gestão completa de traslados, voos privados e transfers em veículos de alta categoria.</p>
+                    </li>
+                    <li class="servicesSection__item" data-anime="left">
+                        <img src="assets/images/icon/food.svg" alt="Food Icon" />
+                        <h3>Gastronomia</h3>
+                        <p>Reservas em restaurantes estrelados, tours culinários e experiências com chefs locais renomados.</p>
+                    </li>
+                    <li class="servicesSection__item" data-anime="top">
+                        <img src="assets/images/icon/compassIcon.svg" alt="Compass Icon" />
+                        <h3>Guias especializados</h3>
+                        <p>Acompanhamento por guias locais experts que transformam destinos em histórias inesquecíveis.</p>
+                    </li>
+                    <li class="servicesSection__item" data-anime="right">
+                        <img src="assets/images/icon/shield.svg" alt="Shield Icon" />
+                        <h3>Suporte 24h</h3>
+                        <p>Nossa equipe está disponível em tempo real para qualquer necessidade durante a sua jornada.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO DE DEPOIMENTOS -->
+        <section class="sectionTestimonials" id="testimonials">
+            <div class="container">
+                <span class="hightlight" data-anime="top">Depoimentos</span>
+                <h2 data-anime="top">O que nossos viajantes dizem</h2>
+
+                <div class="sectionTestimonials__testimonials">
+                    <div class="sectionTestimonials__testimonialCard" data-anime="left">
+                        <div class="sectionTestimonials__stars">★★★★★</div>
+                        <blockquote class="sectionTestimonials__quote">
+                            A Aura Voyages transformou nossa lua de mel em algo que jamais imaginámos possível. Cada detalhe foi pensado com um carinho que só se percebe quando se vive. "
+                        </blockquote>
+                        <div class="sectionTestimonials__author">
+                            <div class="author"><img src="assets/images/icon/userIcon.svg" alt="User Icon"></div>
+                            <div class="sectionTestimonials__userInfo">
+                                <h4>Fernanda Alves</h4>
+                                <span>São Paulo, SP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionTestimonials__testimonialCard" data-anime="top">
+                        <div class="sectionTestimonials__stars">★★★★★</div>
+                        <blockquote class="sectionTestimonials__quote">Viajei sozinho pela Islândia e tive suporte constante. O roteiro era ao mesmo tempo estruturado e flexível. Voltei completamente renovado.</blockquote>
+                        <div class="sectionTestimonials__author">
+                            <div class="author"><img src="assets/images/icon/userIcon.svg" alt="User Icon"></div>
+                            <div class="sectionTestimonials__userInfo">
+                                <h4>Ricardo Moura</h4>
+                                <span>Curitiba, PR</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionTestimonials__testimonialCard" data-anime="right">
+                        <div class="sectionTestimonials__stars">★★★★★</div>
+                        <blockquote class="sectionTestimonials__quote">Cinco amigas, cinco destinos em um único roteiro pelo Mediterrâneo. Parecia impossível, mas a equipe deu conta com elegância e bom humor.</blockquote>
+                        <div class="sectionTestimonials__author">
+                            <div class="author"><img src="assets/images/icon/userIcon.svg" alt="User Icon"></div>
+                            <div class="sectionTestimonials__userInfo">
+                                <h4>Juliana Castro</h4>
+                                <span>Belo Horizonte, MG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- SEÇÃO DA FAQ -->
+        <section class="sectionFaq container" id="faq">
+            <span class="hightlight" data-anime="top">Dúvidas</span>
+            <div class="sectionFaq__box">
+                <div class="sectionFaq__introduction">
+                    <h2 data-anime="top">Perguntas Frequentes</h2>
+                    <p data-anime="top">Tem alguma dúvida? Nós temos a resposta. Confira nossas perguntas frequentes ao lado.</p>
+                </div>
+                <ul class="sectionFaq__FaqList">
+                    <li class="sectionFaq__faq" data-anime="right">
+                        <h3>How can I search for properties on your website? <i class="fa-solid fa-angle-up"></i></h3>
+                        <p>Simply use our search bar to filter properties by location, price range, property type, and other criteria</p>
+                    </li>
+                    <li class="sectionFaq__faq" data-anime="right">
+                        <h3>What fees are associated with using your services? <i class="fa-solid fa-angle-up"></i></h3>
+                        <p>Simply use our search bar to filter properties by location, price range, property type, and other criteria</p>
+                    </li>
+                    <li class="sectionFaq__faq" data-anime="right">
+                        <h3>How can I search for properties on your website? <i class="fa-solid fa-angle-up"></i></h3>
+                        <p>Simply use our search bar to filter properties by location, price range, property type, and other criteria</p>
+                    </li>
+                    <li class="sectionFaq__faq" data-anime="right">
+                        <h3>What is your process for international property transactions? <i class="fa-solid fa-angle-up"></i></h3>
+                        <p>Simply use our search bar to filter properties by location, price range, property type, and other criteria</p>
+                    </li>
+                    <li class="sectionFaq__faq" data-anime="right">
+                        <h3>How can I schedule a property viewing? <i class="fa-solid fa-angle-up"></i></h3>
+                        <p>Simply use our search bar to filter properties by location, price range, property type, and other criteria</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CONTATO -->
+        <section class="contactSection" id="contact">
+            <div class="container">
+                <div class="contactSection__description">
+                    <span class="hightlight" data-anime="top">Contato</span>
+                    <h2 data-anime="top">Vamos planejar sua próxima aventura</h2>
+                    <p data-anime="top">Preencha o formulário e um de nossos consultores entrará em contato em até 24 horas para entender os seus sonhos e transformá-los em realidade.</p>
+                    <ul class="contactSection__list" data-anime="left">
+                        <li class="contactSection__item">
+                            <span><i class="fa-solid fa-location-arrow"></i></span>
+                            <div class="contactSection__contact">
+                                <strong>Endereço</strong>
+                                <span>Av. Paulista, 1578 — São Paulo, SP</span>
+                            </div>
+                        </li>
+                        <li class="contactSection__item">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <div class="contactSection__contact">
+                                <strong>Telefone</strong>
+                                <span>+55 (11) 9 9999-0000</span>
+                            </div>
+                        </li>
+                        <li class="contactSection__item">
+                            <span><i class="fa-solid fa-message"></i></span>
+                            <div class="contactSection__contact">
+                                <strong>E-mail</strong>
+                                <span>contato@auravoyages.com.br</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactSection__call" data-anime="right">
+                    <p>Fale com nossa equipe de especialistas e transforme seus planos em momentos únicos, seguros e marcantes. Cuidamos de tudo para que sua próxima aventura seja simplesmente incrível.</p>
+                    <a href="#hero" class="link__contact">Enviar Mensagem</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <div class="rodape__header">
+                <div class="rodape__info">
+                    <a href="#">Aura.Voyages</a>
+                    <p>Curadoria de experiências de viagem para os que buscam o extraordinário.</p>
+                </div>
+
+                <ul class="rodape__linkList">
+                    <li class="rodape__link">Links Rápidos</li>
+                    <li class="rodape__link"><a href="#about">Sobre Nós</a></li>
+                    <li class="rodape__link"><a href="#services">Serviços</a></li>
+                    <li class="rodape__link"><a href="#testimonials">Depoimentos</a></li>
+                    <li class="rodape__link"><a href="#faq">FAQ</a></li>
+                    <li class="rodape__link"><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape__credits">
+                <p>© 2026 Aura Voyages. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://github.com/kauasilvandrade" target="_blank">Kauã Andrade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/scripts/main.js"></script>
+
+  </body>
+</html>

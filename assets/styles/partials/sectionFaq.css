@@ -1,0 +1,62 @@
+.sectionFaq {
+    color: var(--text-color-secondary);
+}
+
+.sectionFaq__box, .sectionFaq__faq h3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.sectionFaq__introduction h2 {}
+
+.sectionFaq__introduction p {}
+
+.sectionFaq__FaqList {
+}
+
+.sectionFaq__faq {
+    border: 1px solid var(--bg-color-highlight);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.sectionFaq__faq h3 {
+    font-weight: 400;
+
+    & i {
+        transition: .3s;
+        transform: rotate(-180deg);
+    }
+}
+
+.sectionFaq__faq p {
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+    opacity: 0;
+    height: 0;
+    transition: .4s;
+}
+
+/* CLASSE ATIVADA COM JAVASCRIPT */
+
+.sectionFaq__faq.aberto h3 {
+    color: var(--text-color-primary);
+}
+
+.sectionFaq__faq.aberto h3 i {
+    transform: rotate(0deg);
+}
+
+.sectionFaq__faq.aberto p {
+    opacity: 1;
+    height: 3rem;
+    color: var(--text-color-primary);
+}
+
+.sectionFaq__faq.aberto  {
+    background-color: var(--bg-color-highlight);
+}

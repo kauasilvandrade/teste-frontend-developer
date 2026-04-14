@@ -1,58 +1,92 @@
-# Teste para estágio Frontend e Full-Stack
+<<<<<<< HEAD
+=======
+# 🌍 Voyages - Landing Page (Teste Ellos Design)
 
-## Sobre a Ellos Design
+Landing page desenvolvida como parte do processo seletivo para estágio Front-End da **Ellos Design**.
+O projeto apresenta uma empresa fictícia de consultoria de viagens, com foco em design moderno, experiência do usuário e formulário funcional.
 
-A **Ellos Design** é uma agência de marketing e criação de sites localizada em Guarulhos / SP. Somos uma empresa em constante evolução e sempre estamos abertos para pessoas que gostem de tecnologia e queiram trabalhar na área, mas que principalmente queiram aprender e crescer com a nossa empresa.
+---
 
-## Sobre o teste
+# ✨ Demonstração
 
-Este é um teste prático que desenvolvemos para a avaliação dos candidatos participantes de nosso processo seletivo para vagas de Frontend ou Full-Stack.
+🔗 https://teste-ellos.vercel.app/
 
-## Tecnologias para o desafio
+---
 
-Você deve utilizar as seguintes tecnologias para o desenvolvimento do teste:
+# 📸 Preview
+<img width="1903" height="980" alt="image" src="https://github.com/user-attachments/assets/abc34b5f-e6f5-407d-afa7-1244c5dcd727" />
+
+---
+
+# 🚀 Tecnologias utilizadas
 
 - HTML5
-- CSS
-- JavaScript ou jQuery
-- PHP (Para Full-Stack)
-- MySQL (Para Full-Stack)
+- CSS3
+- JavaScript
+- PHP
+- MySQL
 
-## O que nos impressionaria no teste
+---
 
-- Utilização de um pré-processador para o CSS (De preferência o Sass)
-- Aplicação de animações em CSS (Ex: Animações ao realizar scroll)
-- Ver o teste rodando em live (Bucket estático S3, Heroku, Firebase Hosting, etc)
-- Documentação do projeto (Com instruções para executar)
+# 🎯 Funcionalidades
 
-## O que avaliaremos no seu teste
+✔ Layout responsivo  
+✔ Animações ao scroll  
+✔ Formulário funcional  
+✔ Integração com banco de dados  
+✔ Salvamento de contatos  
+✔ Estrutura organizada de código  
 
-- Criatividade
-- Organização do código
-- Performance do código
-- Boas práticas de desenvolvimento
-- Documentação do código
-- Adaptação mobile (layout responsivo)
-- Documentação do projeto (Com instruções para executar)
+---
 
-## Etapas para realização do teste
+# 🖥️ Como executar o projeto
 
-- Faça um [fork](https://github.com/Ellos-Design/teste-frontend-developer/fork) desse projeto em sua conta do GitHub
-- Realize o desafio proposto
-- Faça um push para seu repositório com o desafio implementado
-- Envie um email para (vagas@ellosdesign.com.br) com a URL do seu projeto avisando que você concluiu o teste
+### 1. Clonar o repositório
 
-## O desafio
+```bash
+git clone https://github.com/kauasilvandrade/teste-ellos.git
+```
 
-Você deverá desenvolver uma landing page seguindo a estrutura exibida na imagem abaixo. Você pode utilizar os textos e imagens de sua preferência para a criação da página.
+### 2. Configurar servidor local
+- Instale o **XAMPP**
+- Coloque a pasta do projeto dentro da pasta:
+  ```bash
+  htdocs/
+  ```
 
-#### Full-Stack
+### 3. Criar o banco de dados
+- Acesse o **phpMyAdmin**
+- Crie um banco de dados chamado:
+  
+  ``` bash
+      CREATE DATABASE contatoviagem;
+  ```
 
-Deixar o formulário da landing page funcional, onde ao preencher as informações e clicar para enviar, o formulário será submetido e os dados deverão ser gravados em um banco de dados (Neste caso será necessário nos enviar o arquivo SQL para podermos implementar o banco para avaliação do teste).
+- Crie a tabela contatos:
+  
+  ```bash
+  CREATE DATABASE contatoviagens;
+  CREATE TABLE contatos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100),
+  email VARCHAR(100),
+  telefone VARCHAR(20),
+  destino VARCHAR(100),
+  mensagem TEXT
+  );
+  ```
 
-> [!IMPORTANT]
-> Atenção: O mockup abaixo é apenas um esqueleto estrutural. Não queremos que você replique o design cinza e estático do modelo. Use sua criatividade para definir uma marca fictícia (ou real), escolher uma paleta de cores, tipografia e imagens que deem vida ao projeto. Sinta-se livre para adaptar o layout, desde que mantenha os elementos essenciais.
+### 4. Abrir no navegador
+  - Abra o navegador e acesse:
+    
+    ``` bash
+    http://localhost/teste-frontend-developer/
+    ```
 
-![Template da página a ser desenvolvida](https://github.com/Ellos-Design/teste-frontend-developer/blob/master/wireframe.png?raw=true)
+## 👩‍💻 AUTOR
+  **Kauã da Silva Andrade**  
+  [Linkedin](https://www.linkedin.com/in/kau%C3%A3-andrade/)
+  [GitHub](https://github.com/kauasilvandrade)
 
-**Boa sorte! Use sua criatividade e mostre do que você é capaz.**
+Muito obrigado pela oportunidade Ellos Desgin ❤️
+>>>>>>> a28ecdc30c07c874c2d65722f80aa7d590d01407

@@ -1,0 +1,112 @@
+.servicesSection {
+    background-color: var(--bg-color);
+}
+
+.servicesSection h2 {}
+
+.servicesSection p {}
+
+.servicesSection__listServices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.servicesSection__item {
+    border-right: 1px solid var(--border-card);
+    border-bottom: 1px solid var(--border-card);
+    padding: 2.5rem 2rem;
+
+    position: relative;
+
+    transition: .5s;
+
+    &::before {
+        content: '';
+        width: 0%;
+        height: 5px;
+        background-color: var(--bg-color-highlight);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        transition: .5s;
+    }
+
+    &:hover {
+        background-color: #5c48249f;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.servicesSection__listServices .servicesSection__item:nth-child(3) {
+    border-right: none;
+    border-bottom: 1px solid var(--border-card);
+} 
+
+.servicesSection__listServices .servicesSection__item:nth-child(4), .servicesSection__listServices .servicesSection__item:nth-child(5) {
+    border-right: 1px solid var(--border-card);
+    border-bottom: none;
+} 
+
+.servicesSection__listServices .servicesSection__item:nth-child(6) {
+    border-right: none;
+    border-bottom: none;
+} 
+
+.servicesSection__item img {
+    display: block;
+    width: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.servicesSection__item h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    transition: .5s;
+}
+
+.servicesSection__item:hover h3 {
+    color: var(--text-color-highlight);
+}
+
+.servicesSection__item p {
+    font-size: 0.88rem;
+    line-height: 1.8;
+    color: var(--text-color-tertiary);
+}
+
+@media (max-width: 1024px) {
+    .servicesSection__listServices {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicesSection__listServices .servicesSection__item:nth-child(1) {
+        border-bottom: 1px solid var(--border-card);
+    } 
+
+    .servicesSection__listServices .servicesSection__item:nth-child(2), .servicesSection__listServices .servicesSection__item:nth-child(4) {
+        border-right: none;
+        border-bottom: 1px solid var(--border-card);
+    } 
+
+    .servicesSection__listServices .servicesSection__item:nth-child(3) {
+        border-right: 1px solid var(--border-card);
+    } 
+}
+
+@media (max-width: 850px) {
+    .servicesSection__listServices {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .servicesSection__listServices .servicesSection__item, .servicesSection__listServices .servicesSection__item:nth-child(5), .servicesSection__listServices .servicesSection__item:nth-child(6) {
+        border-bottom: 1px solid var(--border-card);
+        border-right: none;
+    } 
+}
