@@ -60,3 +60,9 @@
 .sectionFaq__faq.aberto  {
     background-color: var(--bg-color-highlight);
 }
+
+@media (max-width: 550px) {
+    .sectionFaq__faq.aberto p {
+        height: 5rem;
+    }
+}
