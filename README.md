@@ -53,7 +53,7 @@ git clone https://github.com/kauasilvandrade/teste-frontend-developer.git
   ```
 
 ### 3. Criar o banco de dados
-- Acesse o **phpMyAdmin**
+- Acesse o **phpMyAdmin** http://localhost/phpmyadmin
 - Crie um banco de dados chamado:
   
   ``` bash
