@@ -63,6 +63,6 @@
 
 @media (max-width: 550px) {
     .sectionFaq__faq.aberto p {
-        height: 5rem;
+        height: 10rem;
     }
 }
