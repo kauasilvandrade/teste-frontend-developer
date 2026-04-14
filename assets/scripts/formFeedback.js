@@ -1,4 +1,4 @@
-export default function formFeedback() {
+export function formFeedback() {
   const form = document.querySelector("#formContato");
   const button = document.querySelector("#btnEnviar");
 
@@ -6,6 +6,6 @@ export default function formFeedback() {
 
   form.addEventListener("submit", () => {
     button.innerText = "Enviando...";
-    button.disabled = true;
+    button.disabled  = true;
   });
 }
