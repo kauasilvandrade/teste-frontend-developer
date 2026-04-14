@@ -42,7 +42,7 @@ O projeto apresenta uma empresa fictícia de consultoria de viagens, com foco em
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/kauasilvandrade/teste-ellos.git
+git clone https://github.com/kauasilvandrade/teste-frontend-developer.git
 ```
 
 ### 2. Configurar servidor local
