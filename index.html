@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Aura Voyages</title>
+    <meta name="description" content="Planeje sua próxima viagem com segurança e praticidade com a Voyage.">
+    <meta name="author" content="Kauã Andrade">
+    <title>Voyage | Planeje sua próxima viagem</title>
     <!-- ICONS -->
     <script src="https://kit.fontawesome.com/ca4876cb59.js" crossorigin="anonymous"></script>
     <!-- FONTE -->
@@ -18,7 +20,7 @@
     <header>
       <div class="container">
         <a href="index.html" class="header__logo">Aura.Voyages</a>
-        <nav class="header__nav">
+        <nav class="header__nav" aria-label="Menu principal">
           <ul class="header__list">
             <li class="header__item"><a href="#about">Sobre</a></li>
             <li class="header__item"><a href="#services">Serviços</a></li>
@@ -54,7 +56,7 @@
                     <a href="#testimonials">Ver Depoimentos</a>
                 </div>
                 
-                <form action="api/processa-form.php" method="POST" data-anime="right" > 
+                <form id="formContato" action="api/processa-form.php" method="POST" data-anime="right" > 
                     <div class="heroSection__inputGroup">
                         <div class="heroSection__inputBox">
                             <label for="name">Nome</label>
@@ -62,16 +64,16 @@
                         </div>
                         <div class="heroSection__inputBox">
                             <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email" placeholder="seu@gmail.com" required>
+                            <input type="email" id="email" name="email" placeholder="seu@gmail.com" required>
                         </div>
                     </div>
                     <div class="heroSection__inputGroup">
                         <div class="heroSection__inputBox">
-                            <label for="text">Telefone</label>
-                            <input type="text" id="text" name="telefone" placeholder="(11) 99999-9999" required>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
                         </div>
                         <div class="heroSection__inputBox">
-                            <label for="email">Destione de Interesse</label>
+                            <label for="destino">Destino de Interesse</label>
                             <select name="destino" id="destino" required>
                                 <option selected disabled value="">Selecione...</option>
                                 <option value="europa">Europa</option>
@@ -89,7 +91,7 @@
                         <label for="menssage">Conte-nos sobre o seu sonho</label>
                         <textarea name="mensagem" id="menssage" rows="5" placeholder="Descreva o tipo de viagem que você imagina..."></textarea>
                     </div>
-                    <button type="submit" class="link__contact">Enviar Mensagem →</button>
+                    <button aria-label="Enviar formulário" type="submit" id="btnEnviar" class="link__contact">Enviar Mensagem →</button>
                 </form>
             </div>
         </section>
@@ -97,7 +99,7 @@
         <!-- SEÇÃO SOBRE NÓS -->
         <section class="aboutUsSection container" id="about">
             <figure class="aboutUsSection__imgBox" data-anime="left">
-                <img src="assets/images/global/morning.png" alt="imagem de uma manhã cheia de balões">
+                <img src="assets/images/global/morning.png" loading="lazy" alt="imagem de uma manhã cheia de balões">
                 <figcaption>Descubra a perspectiva do mundo</figcaption>
             </figure>
 
@@ -233,7 +235,7 @@
                     </li>
                     <li class="sectionFaq__faq" data-anime="right">
                         <h3>Como é feito o pagamento e existe política de cancelamento? <i class="fa-solid fa-angle-up"></i></h3>
-                        <p>Trabalhamos com diferentes condições de pagamento, definidas no momento da proposta. Nossa política de cancelamento varia conforme o destino e os forneceiros envolvidos — todos os termos são apresentados com transparência antes de qualquer compromisso.</p>
+                        <p>Trabalhamos com diferentes condições de pagamento, definidas no momento da proposta. Nossa política de cancelamento varia conforme o destino e os fornecedores envolvidos — todos os termos são apresentados com transparência antes de qualquer compromisso.</p>
                     </li>
                 </ul>
             </div>
