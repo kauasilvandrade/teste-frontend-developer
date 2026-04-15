@@ -5,11 +5,11 @@
 @import "./components/header.css";
 @import "./components/footer.css";
 @import "./components/form.css";
-@import "./components/components.css";
+@import "./components/elements.css";
 
-@import "./sections/heroSection.css";
-@import "./sections/aboutUsSection.css";
-@import "./sections/servicesSection.css";
-@import "./sections/sectionFaq.css";
-@import "./sections/sectionTestimonials.css";
-@import "./sections/contactSection.css";
+@import "./sections/hero.css";
+@import "./sections/about.css";
+@import "./sections/services.css";
+@import "./sections/faq.css";
+@import "./sections/testimonials.css";
+@import "./sections/contact.css";
