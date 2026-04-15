@@ -28,12 +28,13 @@ O projeto apresenta uma empresa fictícia de consultoria de viagens, com foco em
 
 # 🎯 Funcionalidades
 
-✔ Layout responsivo  
-✔ Animações ao scroll  
-✔ Formulário funcional  
-✔ Integração com banco de dados  
-✔ Salvamento de contatos  
-✔ Estrutura organizada de código  
+✔ Layout totalmente responsivo (mobile-first)
+✔ Animações suaves ao scroll
+✔ Formulário com envio assíncrono (AJAX/fetch)
+✔ Integração com banco de dados MySQL
+✔ Armazenamento de leads
+✔ Feedback visual de envio (loading + sucesso)
+✔ Estrutura organizada e escalável
 
 ---
 
@@ -87,4 +88,6 @@ git clone https://github.com/kauasilvandrade/teste-frontend-developer.git
   [Linkedin](https://www.linkedin.com/in/kauã-andrade/)
   [GitHub](https://github.com/kauasilvandrade)
 
-Muito obrigado pela oportunidade Ellos Desgin ❤️
+🙌 Agradecimento
+
+Muito obrigado pela oportunidade, Ellos Design, uma empresa incrível! ❤️

@@ -62,24 +62,40 @@ p {
 [data-anime="top"] {
   opacity: 0;
   transform: translateY(-4rem);
-  transition: .5s;
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 [data-anime="left"] {
   opacity: 0;
   transform: translate3d(-4rem, 0, 0);
-  transition: .5s;
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 [data-anime="right"] {
   opacity: 0;
   transform: translate3d(4rem, 0, 0);
-  transition: .5s;
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 [data-anime].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.formProgress {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: var(--bg-color-highlight);
+  width: 0%;
+  z-index: 999;
 }
 
 @media (max-width: 1280px) {

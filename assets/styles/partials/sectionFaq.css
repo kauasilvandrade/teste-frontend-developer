@@ -38,7 +38,7 @@
 
     opacity: 0;
     height: 0;
-    transition: .4s;
+    transition: 0.4s ease;
 }
 
 /* CLASSE ATIVADA COM JAVASCRIPT */

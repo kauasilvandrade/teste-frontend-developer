@@ -41,10 +41,12 @@ form {
     transition: border-color 0.3s, background 0.3s;
     appearance: none;
     resize: none;
-
+    
+    transition: all 0.3s ease;
     &:focus, &:hover {
         border-color: var(--bg-color-highlight);
         background: rgba(201, 168, 76, 0.05);
+        transform: scale(1.02);
     }
 }
 
@@ -52,15 +54,15 @@ form {
     background-color: #282828;
 }
 
-.heroSection__inputBox textarea {
-    margin-bottom: 2rem;
-}
+.heroSection__inputBox textarea {}
 
 form button {
     display: block;
     cursor: pointer;
     width: 100%;
     padding-block: 1.2rem !important;
+    margin-top: 2rem;
+    outline: none;
 }
 
 @media (max-width: 850px) {

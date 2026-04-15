@@ -1,21 +1,20 @@
 export function initAnimacaoScroll() {
   const sections = document.querySelectorAll('[data-anime]');
-  if(sections.length) {
-    const windowMetade = window.innerHeight * 0.7;
+  if (!sections.length) return;
 
-    function animaScroll() {
-      sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const isSectionVisible = (sectionTop - windowMetade) < 0;
-        if(isSectionVisible)
-          section.classList.add('ativo');
-        else 
-          section.classList.remove('ativo');
-      })
-    }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('ativo');
+      } else {
+        entry.target.classList.remove('ativo');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
 
-    animaScroll();
-
-    window.addEventListener('scroll', animaScroll);
-  }
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
 }

@@ -2,6 +2,8 @@ export function initShowMenu() {
     const btnShowMenu = document.querySelector('.header__btnMenu');
     const menuSidebar = document.querySelector('.header__list');
 
+    if (!btnShowMenu || !menuSidebar) return; 
+
     function abrirMenu(event) {
 
         // TIRAR OS PADRÕES 

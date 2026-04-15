@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/styles/index.css" />
   </head>
   <body>
+    <div class="progressBar"></div>
     <!-- CABEÇALHO -->
     <header>
       <div class="container">
@@ -56,25 +57,25 @@
                     <a href="#testimonials">Ver Depoimentos</a>
                 </div>
                 
-                <form id="formContato" action="api/processa-form.php" method="POST" data-anime="right" > 
+                <form id="formContato" action="php/controller/processa-form.php" method="POST" data-anime="right" > 
                     <div class="heroSection__inputGroup">
                         <div class="heroSection__inputBox">
                             <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
                         </div>
                         <div class="heroSection__inputBox">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="seu@gmail.com" required>
+                            <input type="email" id="email" name="email" placeholder="seu@gmail.com">
                         </div>
                     </div>
                     <div class="heroSection__inputGroup">
                         <div class="heroSection__inputBox">
                             <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
                         </div>
                         <div class="heroSection__inputBox">
                             <label for="destino">Destino de Interesse</label>
-                            <select name="destino" id="destino" required>
+                            <select name="destino" id="destino">
                                 <option selected disabled value="">Selecione...</option>
                                 <option value="europa">Europa</option>
                                 <option value="asia">Ásia</option>
@@ -88,8 +89,8 @@
                         </div>
                     </div>
                     <div class="heroSection__inputBox">
-                        <label for="menssage">Conte-nos sobre o seu sonho</label>
-                        <textarea name="mensagem" id="menssage" rows="5" placeholder="Descreva o tipo de viagem que você imagina..."></textarea>
+                        <label for="mensagem">Conte-nos sobre o seu sonho</label>
+                        <textarea name="mensagem" id="mensagem" rows="5" placeholder="Descreva o tipo de viagem que você imagina..."></textarea>
                     </div>
                     <button aria-label="Enviar formulário" type="submit" id="btnEnviar" class="link__contact">Enviar Mensagem →</button>
                 </form>

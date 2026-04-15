@@ -81,6 +81,16 @@
     color: var(--text-color-tertiary);
 }
 
+.servicesSection__item,
+.sectionTestimonials__testimonialCard {
+  transition: all 0.3s ease;
+}
+
+.servicesSection__item:hover,
+.sectionTestimonials__testimonialCard:hover {
+  transform: translateY(-10px);
+}
+
 @media (max-width: 1024px) {
     .servicesSection__listServices {
         grid-template-columns: repeat(2, 1fr);
