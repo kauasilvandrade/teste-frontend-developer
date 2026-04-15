@@ -1,0 +1,123 @@
+footer {
+    background-color: #080808;
+    padding-top: 3rem;
+}
+
+.rodape__header {
+    border-bottom: 1px solid var(--border-card);
+}
+
+.rodape__header, .rodape__credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape__info a {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.rodape__linkList {
+    margin-bottom: 1.5rem;
+    width: 10rem;
+}
+
+.rodape__link {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    
+    a {
+        color: rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+        display: block;
+        width: 100%;
+
+        margin-top: 0.7rem;
+
+        padding: 0.7rem 0;
+        text-transform: initial;
+
+        position: relative;
+
+        &:hover {
+            color: white;
+        }
+    
+        &:hover::before {
+            width: 100%;
+        }
+        
+        &::before {
+            content: '';
+            background-color: var(--text-color-primary);
+            width: 0%;
+            height: 1px;
+            
+            position: absolute;
+            left: 0%;
+            bottom: -0.3rem;
+            
+            transition: .5s;
+        }
+    }
+}
+
+.rodape__credits {
+    padding-block: 1.2rem;
+
+    & a {
+        position: relative;
+        color: var(--text-color-primary);
+
+        &:hover::before {
+            width: 100%;
+        }
+        
+        &::before {
+            content: '';
+            background-color: var(--text-color-primary);
+            width: 0%;
+            height: 1px;
+            
+            position: absolute;
+            left: 0%;
+            bottom: -0.3rem;
+            
+            transition: .5s;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .contactSection .container {
+        gap: 5rem;
+    }
+    .rodape__info a {
+        text-align: center;
+    }
+    .rodape__linkList {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .rodape__linkList {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .rodape__link {
+        width: 100%;
+        & a {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 0;
+        }
+    }
+}

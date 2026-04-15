@@ -1,14 +1,15 @@
-@import url(components.css);
-@import url(global.css);
-@import url(variable.css);
+@import "./base/variables.css";
+@import "./base/global.css";
+@import "./base/animations.css";
 
-/* PARTES */
-@import url(partials/header.css);
-@import url(partials/heroSection.css);
-@import url(partials/form.css);
-@import url(partials/aboutUsSection.css);
-@import url(partials/servicesSection.css);
-@import url(partials/sectionTestimonials.css);
-@import url(partials/sectionFaq.css);
-@import url(partials/contactSection.css);
-@import url(partials/footer.css);
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/form.css";
+@import "./components/components.css";
+
+@import "./sections/heroSection.css";
+@import "./sections/aboutUsSection.css";
+@import "./sections/servicesSection.css";
+@import "./sections/sectionFaq.css";
+@import "./sections/sectionTestimonials.css";
+@import "./sections/contactSection.css";
