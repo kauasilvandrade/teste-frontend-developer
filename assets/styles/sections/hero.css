@@ -16,19 +16,19 @@
 }
 
 .heroSection__introduction h1 {
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size: var(--title-lg);
     line-height: 1.05;
     margin-bottom: 1.5rem;
 
     & strong {
-        font-weight: 300;
+        font-weight: var(--font-light);
         color: var(--text-color-highlight);
         font-style: italic;
     }
 }
 
 .heroSection__introduction p {
-    font-size: 1rem;
+    font-size: var(--text-base);
     color: var(--text-color-tertiary);
     line-height: 1.8;
 
@@ -37,10 +37,10 @@
 }
 
 .heroSection__introduction a:not(.link__contact) {
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
     color: var(--text-color-primary);
     border: 1px solid var(--text-color-highlight);
-    font-weight: 500;
+    font-weight: var(--font-medium);
     text-transform: uppercase;
 
     letter-spacing: 0.1em;
@@ -48,7 +48,7 @@
 
     margin-left: 1rem;
 
-    transition: .5s;
+    transition: var(--transition);
 
     &:hover {
         background-color: #ad9041;

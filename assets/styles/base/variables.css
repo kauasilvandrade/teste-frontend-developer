@@ -1,4 +1,5 @@
 :root {
+  /* COLORS */
   --bg-color: #0D0D0D;
   --bg-color-section: #F5F0E8;
   --text-color-primary: #ffffff;
@@ -9,5 +10,23 @@
   --text-color-highlight: #c9a84c;
   --bg-color-highlight: #c9a84c;
 
-  --border-card: #5d5c5c65
+  --border-card: #5d5c5c65;
+
+  /* FONTS */
+  --font-primary: "Roboto", system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem; 
+  --text-sm: 0.9rem; 
+  --text-base: 1rem; 
+  --text-md: 1.5rem; 
+  --text-lg: 2rem;  
+
+  --title-md: clamp(2rem, 4vw, 3.2rem);
+  --title-lg: clamp(3rem, 6vw, 5.5rem);
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+
+  --transition: all 0.3s ease;
 }

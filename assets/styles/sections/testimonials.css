@@ -36,13 +36,13 @@
 
 .sectionTestimonials__stars {
     color: var(--text-color-highlight);
-    font-size: 1rem;
+    font-size: var(--text-base);
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
 }
 
 .sectionTestimonials__quote {
-    font-size: 1rem;
+    font-size: var(--text-base);
     font-style: italic;
     line-height: 1.75;
     margin-bottom: 1.5rem;
@@ -71,12 +71,12 @@
 .sectionTestimonials__userInfo {}
 
 .sectionTestimonials__userInfo h4 {
-    font-size: 0.85rem;
-    font-weight: 500;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
 }
 
 .sectionTestimonials__userInfo span {
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
 }
 
 @media (max-width: 1024px) {

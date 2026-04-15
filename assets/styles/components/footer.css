@@ -26,7 +26,7 @@ footer {
 
 .rodape__link {
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     
     a {
         color: rgba(255, 255, 255, 0.4);
@@ -59,7 +59,7 @@ footer {
             left: 0%;
             bottom: -0.3rem;
             
-            transition: .5s;
+            transition: var(--transition);
         }
     }
 }
@@ -85,7 +85,7 @@ footer {
             left: 0%;
             bottom: -0.3rem;
             
-            transition: .5s;
+            transition: var(--transition);
         }
     }
 }

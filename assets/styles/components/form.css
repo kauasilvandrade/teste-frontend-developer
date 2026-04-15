@@ -22,7 +22,7 @@ form {
 
 .heroSection__inputBox label {
     display: block;
-    font-size: 0.7rem;
+    font-size: var(--text-xs);
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
@@ -35,14 +35,14 @@ form {
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--white);
     font-family: var(--sans);
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
     padding: 0.85rem 1rem;
     outline: none;
     transition: border-color 0.3s, background 0.3s;
     appearance: none;
     resize: none;
     
-    transition: all 0.3s ease;
+    transition: var(--transition);
     &:focus, &:hover {
         border-color: var(--bg-color-highlight);
         background: rgba(201, 168, 76, 0.05);

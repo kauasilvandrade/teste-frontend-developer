@@ -19,7 +19,7 @@
 
     position: relative;
 
-    transition: .5s;
+    transition: var(--transition);
 
     &::before {
         content: '';
@@ -31,7 +31,7 @@
         bottom: 0;
         left: 0;
 
-        transition: .5s;
+        transition: var(--transition);
     }
 
     &:hover {
@@ -65,10 +65,10 @@
 }
 
 .servicesSection__item h3 {
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: var(--text-md);
+    font-weight: var(--font-regular);
     margin-bottom: 0.8rem;
-    transition: .5s;
+    transition: var(--transition);
 }
 
 .servicesSection__item:hover h3 {
@@ -76,14 +76,14 @@
 }
 
 .servicesSection__item p {
-    font-size: 0.88rem;
+    font-size: var(--text-sm);
     line-height: 1.8;
     color: var(--text-color-tertiary);
 }
 
 .servicesSection__item,
 .sectionTestimonials__testimonialCard {
-  transition: all 0.3s ease;
+  transition: var(--transition)
 }
 
 .servicesSection__item:hover,

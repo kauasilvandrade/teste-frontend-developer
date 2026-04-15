@@ -55,7 +55,7 @@
 
 .aboutSection__characteristicsItem {    
     color: var(--text-color-quartiary);
-    font-size: 0.7rem;
+    font-size: var(--text-xs);
     padding: 0.5rem 1rem;
 
     letter-spacing: 0.12em;

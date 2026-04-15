@@ -1,15 +1,15 @@
 .link__contact {
     background-color: var(--bg-color-highlight);
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
     color: var(--text-color-primary);
-    font-weight: 500;
+    font-weight: var(--font-medium);
     text-transform: uppercase;
 
     letter-spacing: 0.1em;
     border: none;
     padding: 0.9rem 2.2rem;
 
-    transition: all 0.3s ease;
+    transition: var(--transition);
 
     &:hover {
         transform: translateY(3px);
@@ -23,7 +23,7 @@
     align-items: center;
     gap: 1rem;
     
-    font-size: 0.7rem;
+    font-size: var(--text-xs);
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--text-color-highlight);

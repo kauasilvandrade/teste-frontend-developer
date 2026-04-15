@@ -6,15 +6,14 @@
   padding: 0;
 }
 
-html {
+html, body {
   overflow-x: hidden;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-primary);
   background-color: var(--bg-color-section);
   color: var(--text-color-primary);
-  overflow-x: hidden;
 }
 
 a {
@@ -31,11 +30,11 @@ section {
 }
 
 h1, h2 {
-  font-weight: 300;
+  font-weight: var(--font-light);
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: var(--title-md);
   line-height: 1.2;
   margin-bottom: 1.5rem;
 
@@ -47,7 +46,7 @@ h2 {
 
 p {
   color: var(--text-color-quartiary);
-  font-size: 1rem;
+  font-size: var(--text-base);
   line-height: 1.8;
 
   margin-bottom: 1.5rem;

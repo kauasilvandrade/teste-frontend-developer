@@ -16,8 +16,8 @@ header .container, .header__list {
 
 .header__logo {
     color: var(--text-color-primary);
-    font-size: 1.5em;
-    transition: .5s;
+    font-size: var(--text-md);
+    transition: var(--transition);
     
     &:hover {
         color: var(--text-color-tertiary);
@@ -33,12 +33,12 @@ header .container, .header__list {
 .header__item {}
 
 .header__item a {
-    font-size: 0.9em;
-    font-weight: 500;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
     color: var(--text-color-tertiary);
     text-transform: uppercase;
     padding: 1rem 0;
-    transition: .5s;
+    transition: var(--transition);
     
     position: relative;
     
@@ -61,7 +61,7 @@ header .container, .header__list {
         bottom: -0.1rem;
         
         transform: translateX(-50%);
-        transition: .2s;
+        transition: var(--transition);
     }
 }
 
@@ -87,7 +87,7 @@ header .container, .header__list {
         position: fixed;
         left: -100%;
         top: 0;
-        transition: .5s;
+        transition: var(--transition);
     }
 
     .header__item {
@@ -125,7 +125,7 @@ header .container, .header__list {
             display: block;
             border-top: 3px solid white;
             width: 2.4rem;
-            transition: .3s;
+            transition: var(--transition);
 
             &::before, &::after {
                 content: '';
@@ -135,7 +135,7 @@ header .container, .header__list {
                 background-color: white;
                 margin: 0.4rem 0;
                 position: relative;
-                transition: .3s;
+                transition: var(--transition);
             }
         }
      

@@ -22,7 +22,7 @@
 }
 
 .formProgress {
-  font-size: 0.9rem;
+  font-size: var(--text-sm);
   margin-bottom: 20px;
   color: #666;
 }
