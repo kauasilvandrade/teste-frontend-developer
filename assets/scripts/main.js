@@ -4,6 +4,7 @@ import { initScrollSuave } from "./smoothScroll.js";
 import { initAnimacaoScroll } from "./scrollAnimation.js";
 import { formFocus } from "./formFocus.js";
 import { validateForm } from "./validateForm.js";
+import { activeMenu } from "./activeMenu.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   initShowMenu();
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnimacaoScroll();
   formFocus();
   validateForm();
+  activeMenu()
 });
 
 window.addEventListener("scroll", () => {
