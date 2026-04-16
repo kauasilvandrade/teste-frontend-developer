@@ -1,5 +1,5 @@
 header {
-    background-color: #0d0d0d;
+    background-color: var(--bg-color);
     padding: 1.2rem 1.5rem;
     
     position: fixed;
@@ -103,7 +103,7 @@ header .container, .header__list {
         
         &:hover {
             color: var(--text-color-highlight);
-            border-bottom: 2px solid var(bg-color-highlight);
+            border-bottom: 2px solid var(--bg-color-highlight);
         }
 
         &::before {

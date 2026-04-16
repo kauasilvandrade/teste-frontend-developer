@@ -1,20 +1,18 @@
 export function initAnimacaoScroll() {
-  const sections = document.querySelectorAll('[data-anime]');
-  if (!sections.length) return;
+    const elementos = document.querySelectorAll('[data-anime]');
+    if (!elementos.length) return;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('ativo');
-      } else {
-        entry.target.classList.remove('ativo');
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('ativo');
+                
+                if (!entry.target.closest('.heroSection__introduction')) {
+                    observer.unobserve(entry.target);
+                }
+            }
+        });
+    }, { threshold: 0.15 });
 
-  sections.forEach((section) => {
-    observer.observe(section);
-  });
+    elementos.forEach((el) => observer.observe(el));
 }
