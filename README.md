@@ -19,23 +19,22 @@ O projeto apresenta uma empresa fictícia de consultoria de viagens, com foco em
 # 🚀 Tecnologias utilizadas
 
 - HTML5
-- CSS3
-- JavaScript
-- PHP
+- CSS (Nesting)
+- JavaScript (Vanilla)
+- PHP (PDO)
 - MySQL
 
 ---
 
 # 🎯 Funcionalidades
 
-✔ Layout totalmente responsivo (mobile-first)
-✔ Animações suaves ao scroll
-✔ Formulário com envio assíncrono (AJAX/fetch)
-✔ Integração com banco de dados MySQL
-✔ Armazenamento de leads
-✔ Feedback visual de envio (loading + sucesso)
-✔ Estrutura organizada e escalável
-
+- Animações de Scroll: Uso da Intersection Observer API p
+- Scroll Spy: Menu de navegação que rastreia a posição do usuário na página.
+- Formulário de Lead: Sistema de captura com validação de dados e feedback visual para o usuário 
+- Responsividade: Adaptado para diferentes resoluções de tela.
+- Animações / Hover
+- Velocidade e grande performance
+  
 ---
 
 # 🖥️ Como executar o projeto
@@ -57,13 +56,13 @@ git clone https://github.com/kauasilvandrade/teste-frontend-developer.git
 ### 3. Criar o banco de dados
 - Acesse o **phpMyAdmin** 
 - http://localhost/phpmyadmin
-- Crie um banco de dados chamado:
+- Crie um banco de dados chamado contatoviagem e execute:
   
   ``` bash
       CREATE DATABASE contatoviagem;
   ```
 
-- Crie a tabela contatos:
+- Crie a tabela contatos e execute:
   
   ```bash
   CREATE TABLE contatos (
