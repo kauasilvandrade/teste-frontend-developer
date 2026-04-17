@@ -28,7 +28,8 @@ O projeto apresenta uma empresa fictícia de consultoria de viagens, com foco em
 
 # 🎯 Funcionalidades
 
-- Animações de Scroll: Uso da Intersection Observer API p
+- Animações de Scroll: Uso da Intersection Observer API
+- Faq accodion: Lista de dúvidas dinâmicas 
 - Scroll Spy: Menu de navegação que rastreia a posição do usuário na página.
 - Formulário de Lead: Sistema de captura com validação de dados e feedback visual para o usuário 
 - Responsividade: Adaptado para diferentes resoluções de tela.
